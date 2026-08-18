@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sandeep Kumar Yadav — Full Stack Developer</title>
+  <meta name="description" content="Portfolio of Sandeep Kumar Yadav — Full Stack Developer specializing in MERN stack, AI integration, and scalable web applications." />
+  <meta name="author" content="Sandeep Kumar Yadav" />
+  <meta property="og:title" content="Sandeep Kumar Yadav — Full Stack Developer" />
+  <meta property="og:description" content="Full Stack Developer specializing in MERN stack, AI integration, and scalable web applications." />
+  <meta property="og:type" content="website" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>&#x1F3E0;</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="cursor"></div>
+  <div class="cursor-follower"></div>
+
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo magnetic" data-magnetic>Sandeep<span class="accent">.</span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#journey">Journey</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a href="assets/resume/Sandeep_Kumar_Yadav_Resume.pdf" class="btn btn-ghost magnetic" data-magnetic download="Sandeep_Kumar_Yadav_Resume.pdf">
+          Resume
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+        </a>
+        <button class="theme-toggle magnetic" id="themeToggle" data-magnetic aria-label="Toggle theme">
+          <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+          <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <!-- Hero -->
+    <section id="hero" class="hero">
+      <div class="flow-lines hero-flow" aria-hidden="true">
+        <svg viewBox="0 0 1400 800" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+          <defs>
+            <filter id="heroGlow" x="-20%" y="-20%" width="140%" height="140%">
+              <feGaussianBlur in="SourceGraphic" stdDeviation="4" result="blur"/>
+              <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+            </filter>
+          </defs>
+          <path d="M-50,380 C200,355 450,405 700,375 C950,345 1150,385 1450,365" stroke="#00F5C8" stroke-width="1.5" opacity="0.35" filter="url(#heroGlow)"/>
+          <path d="M-50,395 C180,375 430,415 680,390 C930,365 1130,400 1450,382" stroke="#00F5C8" stroke-width="1.2" opacity="0.30" filter="url(#heroGlow)"/>
+          <path d="M-50,365 C220,345 470,385 720,360 C970,335 1170,370 1450,352" stroke="#00F5C8" stroke-width="1" opacity="0.25" filter="url(#heroGlow)"/>
+          <path d="M-50,410 C190,390 440,430 690,405 C940,380 1140,415 1450,398" stroke="#00F5C8" stroke-width="1.3" opacity="0.28" filter="url(#heroGlow)"/>
+          <path d="M-50,340 C250,325 500,355 750,335 C1000,315 1200,345 1450,328" stroke="#00F5C8" stroke-width="0.8" opacity="0.15"/>
+          <path d="M-50,440 C230,428 480,452 730,435 C980,420 1180,445 1450,432" stroke="#00F5C8" stroke-width="0.8" opacity="0.15"/>
+          <path d="M-50,355 C200,342 450,368 700,350 C950,335 1150,360 1450,345" stroke="#00F5C8" stroke-width="0.7" opacity="0.12"/>
+          <path d="M-50,425 C210,415 460,435 710,420 C960,408 1160,430 1450,418" stroke="#00F5C8" stroke-width="0.7" opacity="0.12"/>
+          <path d="M-50,320 C280,308 530,332 780,315 C1030,300 1230,325 1450,310" stroke="#00F5C8" stroke-width="0.6" opacity="0.10"/>
+          <path d="M-50,460 C260,452 510,468 760,455 C1010,445 1210,462 1450,450" stroke="#00F5C8" stroke-width="0.6" opacity="0.10"/>
+          <path d="M-50,375 C195,365 445,385 695,372 C945,360 1145,378 1450,368" stroke="#00F5C8" stroke-width="0.6" opacity="0.10"/>
+          <path d="M-50,405 C205,397 455,413 705,403 C955,395 1155,408 1450,400" stroke="#00F5C8" stroke-width="0.6" opacity="0.10"/>
+          <path d="M-50,290 C320,278 570,302 820,285 C1070,272 1270,295 1450,282" stroke="#00F5C8" stroke-width="0.5" opacity="0.07"/>
+          <path d="M-50,490 C300,482 550,498 800,488 C1050,480 1250,494 1450,485" stroke="#00F5C8" stroke-width="0.5" opacity="0.07"/>
+          <path d="M-50,270 C350,262 600,278 850,268 C1100,260 1300,274 1450,265" stroke="#00F5C8" stroke-width="0.4" opacity="0.05"/>
+          <path d="M-50,510 C330,505 580,515 830,508 C1080,502 1280,512 1450,506" stroke="#00F5C8" stroke-width="0.4" opacity="0.05"/>
+          <path d="M-50,310 C290,302 540,318 790,308 C1040,300 1240,314 1450,305" stroke="#00F5C8" stroke-width="0.4" opacity="0.06"/>
+          <path d="M-50,470 C270,465 520,475 770,468 C1020,462 1220,472 1450,466" stroke="#00F5C8" stroke-width="0.4" opacity="0.06"/>
+          <path d="M-50,335 C240,328 490,342 740,334 C990,328 1190,339 1450,332" stroke="#00F5C8" stroke-width="0.4" opacity="0.05"/>
+          <path d="M-50,445 C250,440 500,450 750,443 C1000,438 1200,447 1450,442" stroke="#00F5C8" stroke-width="0.4" opacity="0.05"/>
+          <path d="M-50,250 C400,244 650,256 900,248 C1150,242 1350,252 1450,246" stroke="#00F5C8" stroke-width="0.3" opacity="0.03"/>
+          <path d="M-50,530 C380,526 630,534 880,528 C1130,524 1330,531 1450,527" stroke="#00F5C8" stroke-width="0.3" opacity="0.03"/>
+          <path d="M-50,230 C420,225 670,235 920,228 C1170,223 1370,232 1450,227" stroke="#00F5C8" stroke-width="0.3" opacity="0.02"/>
+          <path d="M-50,550 C400,547 650,553 900,548 C1150,545 1350,551 1450,548" stroke="#00F5C8" stroke-width="0.3" opacity="0.02"/>
+          <path d="M-50,350 C350,345 600,355 850,348 C1100,343 1300,352 1450,347" stroke="#00F5C8" stroke-width="0.3" opacity="0.03"/>
+          <path d="M-50,370 C100,330 300,420 500,370 C700,320 900,410 1450,365" stroke="#00F5C8" stroke-width="0.5" opacity="0.08"/>
+          <path d="M-50,400 C120,440 320,350 520,400 C720,450 920,360 1450,395" stroke="#00F5C8" stroke-width="0.5" opacity="0.08"/>
+          <path d="M-50,385 C150,360 350,410 550,385 C750,360 950,405 1450,380" stroke="#00F5C8" stroke-width="0.4" opacity="0.06"/>
+        </svg>
+      </div>
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-text">
+            <div class="hero-badge anim-in">
+              <span class="status-dot"></span>
+              AVAILABLE FOR SDE-1 &amp; FULL STACK ROLES
+            </div>
+            <h1 class="hero-name">
+              <span class="hero-greeting anim-in">Hi, I'm</span>
+              <span class="hero-name-row">
+                <span class="hero-teal-line anim-in"></span>
+                <span class="hero-name-wrap anim-in">
+                  <span class="hero-main" data-scramble>SANDEEP</span>
+                  <span class="hero-outline" aria-hidden="true">SANDEEP</span>
+                </span>
+              </span>
+            </h1>
+            <p class="hero-role anim-in">FULL STACK DEVELOPER</p>
+            <p class="hero-desc anim-in">I build modern full-stack web applications.</p>
+            <p class="hero-sub anim-in">
+              Full Stack Developer specializing in the MERN stack, AI-powered features, and clean, scalable architecture.
+            </p>
+            <div class="hero-tags anim-in">
+              <span>Java</span>
+              <span>JavaScript</span>
+              <span>React</span>
+              <span>Node.js</span>
+              <span>MongoDB</span>
+              <span>SQL</span>
+            </div>
+            <div class="hero-buttons anim-in">
+              <a href="#projects" class="btn btn-primary magnetic" data-magnetic>VIEW PROJECTS <span>&rarr;</span></a>
+              <a href="assets/resume/Sandeep_Kumar_Yadav_Resume.pdf" class="btn btn-outline magnetic" data-magnetic target="_blank" rel="noopener noreferrer">VIEW RESUME</a>
+              <a href="assets/resume/Sandeep_Kumar_Yadav_Resume.pdf" class="btn btn-outline magnetic" data-magnetic download="Sandeep_Kumar_Yadav_Resume.pdf">DOWNLOAD RESUME
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+              </a>
+            </div>
+          </div>
+          <div class="hero-photo anim-in">
+            <div class="hero-photo-ring">
+              <img src="assets/profile/passport_photo.jpg" alt="Sandeep Kumar Yadav" width="320" height="320" loading="eager" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section section-alt">
+      <div class="container">
+        <div class="section-label anim-in">
+          <span class="section-num">01</span>
+          <span class="section-line"></span>
+          <span>ABOUT</span>
+        </div>
+        <div class="section-headline gsap-reveal" data-scramble>I BUILD PRODUCTS,<br/>NOT JUST INTERFACES.</div>
+        <div class="about-grid">
+          <div class="about-text gsap-reveal">
+            <p>
+              I'm a B.Tech Computer Science graduate (CGPA 8.40/10) who loves
+              turning ideas into scalable full-stack products. I work primarily
+              with the MERN stack — React.js, Node.js, Express.js, and MongoDB —
+              and enjoy integrating AI (Google Gemini) into real applications.
+            </p>
+            <p>
+              I've solved 250+ DSA problems on LeetCode and GeeksforGeeks and
+              recently completed a Full-Stack Developer internship where I
+              improved API performance by 30%.
+            </p>
+          </div>
+          <div class="about-stats gsap-reveal">
+            <div class="stat-item">
+              <span class="stat-value" data-target="8.40" data-decimal="true">00.00</span>
+              <span class="stat-label">CGPA</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-value-wrap">
+                <span class="stat-value" data-target="250">000</span><span class="stat-suffix">+</span>
+              </span>
+              <span class="stat-label">DSA PROBLEMS</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-value" data-target="3">0</span>
+              <span class="stat-label">PROJECTS</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-value-wrap">
+                <span class="stat-value" data-target="30">00</span><span class="stat-suffix">%</span>
+              </span>
+              <span class="stat-label">API IMPROVEMENT</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Journey -->
+    <section id="journey" class="section">
+      <div class="container">
+        <div class="section-label anim-in">
+          <span class="section-num">02</span>
+          <span class="section-line"></span>
+          <span>JOURNEY</span>
+        </div>
+        <div class="section-headline gsap-reveal" data-scramble>FROM LEARNING<br/>TO BUILDING.</div>
+        <div class="timeline">
+          <div class="timeline-item gsap-reveal-left">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <span class="timeline-date">2025</span>
+              <h3>Full Stack Developer Intern</h3>
+              <p class="timeline-org">GNCIPL — Remote</p>
+              <p class="timeline-desc">Built and optimized RESTful APIs in a production Node.js + Express.js environment. Achieved a 30% improvement in API response time through query optimization and middleware refactoring.</p>
+              <div class="timeline-tech">
+                <span>React</span><span>Node.js</span><span>Express.js</span><span>MongoDB</span>
+              </div>
+            </div>
+          </div>
+          <div class="timeline-item gsap-reveal-left">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <span class="timeline-date">2022 — 2026</span>
+              <h3>B.Tech — Computer Science &amp; Engineering</h3>
+              <p class="timeline-org">UIET, Kanpur</p>
+              <p class="timeline-desc">Graduated with a CGPA of 8.40/10. Specialized in full-stack development, data structures and algorithms, REST architecture, and object-oriented programming.</p>
+            </div>
+          </div>
+          <div class="timeline-item gsap-reveal-left">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <span class="timeline-date">2021</span>
+              <h3>Class XII — UP Board</h3>
+              <p class="timeline-org">B.B.I.C. Pureramgulam G.G., Bhadohi</p>
+              <p class="timeline-desc">Scored 83.20% in the UP Board examinations.</p>
+            </div>
+          </div>
+          <div class="timeline-item gsap-reveal-left">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <span class="timeline-date">2019</span>
+              <h3>Class X — UP Board</h3>
+              <p class="timeline-org">B.B.I.C. Pureramgulam G.G., Bhadohi</p>
+              <p class="timeline-desc">Scored 88.33% in the UP Board examinations.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section section-alt">
+      <div class="container">
+        <div class="section-label anim-in">
+          <span class="section-num">03</span>
+          <span class="section-line"></span>
+          <span>SKILLS</span>
+        </div>
+        <div class="section-headline gsap-reveal" data-scramble>TECH STACK<br/>I WORK WITH.</div>
+        <div class="skills-grid">
+          <div class="skill-category gsap-reveal-up">
+            <h3>FRONTEND</h3>
+            <div class="skill-items">
+              <div class="skill-item"><i class="devicon-react-original"></i> React.js</div>
+              <div class="skill-item"><i class="devicon-javascript-plain"></i> JavaScript</div>
+              <div class="skill-item"><i class="devicon-html5-plain"></i> HTML5</div>
+              <div class="skill-item"><i class="devicon-css3-plain"></i> CSS3</div>
+              <div class="skill-item"><i class="devicon-tailwindcss-plain"></i> Tailwind CSS</div>
+              <div class="skill-item"><i class="devicon-bootstrap-plain"></i> Bootstrap</div>
+            </div>
+          </div>
+          <div class="skill-category gsap-reveal-up">
+            <h3>BACKEND</h3>
+            <div class="skill-items">
+              <div class="skill-item"><i class="devicon-nodejs-plain"></i> Node.js</div>
+              <div class="skill-item"><i class="devicon-express-original"></i> Express.js</div>
+              <div class="skill-item"><i class="devicon-socketio-original"></i> Socket.io</div>
+              <div class="skill-item"><i class="devicon-java-plain"></i> Java</div>
+            </div>
+          </div>
+          <div class="skill-category gsap-reveal-up">
+            <h3>DATABASE</h3>
+            <div class="skill-items">
+              <div class="skill-item"><i class="devicon-mongodb-plain"></i> MongoDB</div>
+              <div class="skill-item"><i class="devicon-mongodb-plain"></i> MongoDB Atlas</div>
+              <div class="skill-item"><i class="devicon-mysql-plain"></i> MySQL</div>
+              <div class="skill-item"><i class="devicon-mongoose-original"></i> Mongoose</div>
+            </div>
+          </div>
+          <div class="skill-category gsap-reveal-up">
+            <h3>TOOLS &amp; AI</h3>
+            <div class="skill-items">
+              <div class="skill-item"><i class="devicon-git-plain"></i> Git</div>
+              <div class="skill-item"><i class="devicon-github-original"></i> GitHub</div>
+              <div class="skill-item"><i class="devicon-firebase-plain"></i> Firebase</div>
+              <div class="skill-item"><i class="devicon-google-plain"></i> Gemini AI</div>
+              <div class="skill-item"><i class="devicon-vercel-plain"></i> Vercel</div>
+              <div class="skill-item"><i class="devicon-postman-plain"></i> Postman</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="section-label anim-in">
+          <span class="section-num">04</span>
+          <span class="section-line"></span>
+          <span>SELECTED WORK</span>
+        </div>
+
+        <article class="project-block gsap-reveal-up" data-tilt>
+          <div class="project-visual">
+            <div class="live-preview">
+              <div class="live-preview-header">
+                <div class="mockup-dots"><span></span><span></span><span></span></div>
+                <div class="live-preview-url">skillx-sooty.vercel.app</div>
+                <a href="https://skillx-sooty.vercel.app" class="live-preview-external" target="_blank" rel="noopener" aria-label="Open live site">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                </a>
+              </div>
+              <div class="live-preview-frame">
+                <iframe src="https://skillx-sooty.vercel.app" loading="lazy" title="SkillX live preview" sandbox="allow-scripts allow-same-origin"></iframe>
+                <div class="live-preview-overlay"></div>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <span class="project-num">01</span>
+            <h3 class="project-name" data-scramble>SkillX</h3>
+            <p class="project-tagline">AI-Powered Skill Exchange &amp; Gig Collaboration Platform</p>
+            <p class="project-desc">A full-stack platform for teaching, learning, and collaborating on real-time skill exchange. Features AI-driven learning roadmaps, video calls, chat, and smart scheduling.</p>
+            <ul class="project-features">
+              <li>AI skill matching with personalized learning roadmaps via Gemini API</li>
+              <li>Real-time video calls and chat using WebRTC and Socket.io</li>
+              <li>Smart scheduling across time zones with gig collaboration tools</li>
+              <li>Role-based dashboards with analytics for sellers and buyers</li>
+            </ul>
+            <div class="project-tech">
+              <span>React.js</span><span>Node.js</span><span>Express.js</span><span>MongoDB</span><span>Socket.io</span><span>Gemini AI</span><span>Firebase</span><span>Tailwind CSS</span>
+            </div>
+            <div class="project-links">
+              <a href="https://skillx-sooty.vercel.app" class="btn btn-primary btn-sm magnetic" data-magnetic target="_blank" rel="noopener">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                Live
+              </a>
+              <a href="https://github.com/sandeepkumaryadav05/SKillX" class="btn btn-outline btn-sm magnetic" data-magnetic target="_blank" rel="noopener">
+                <i class="devicon-github-original"></i> GitHub
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-block reverse gsap-reveal-up" data-tilt>
+          <div class="project-visual">
+            <div class="live-preview">
+              <div class="live-preview-header">
+                <div class="mockup-dots"><span></span><span></span><span></span></div>
+                <div class="live-preview-url">majorproject-7z8l.onrender.com</div>
+                <a href="https://majorproject-7z8l.onrender.com/listings" class="live-preview-external" target="_blank" rel="noopener" aria-label="Open live site">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                </a>
+              </div>
+              <div class="live-preview-frame">
+                <iframe src="https://majorproject-7z8l.onrender.com/listings" loading="lazy" title="Wanderlust live preview" sandbox="allow-scripts allow-same-origin"></iframe>
+                <div class="live-preview-overlay"></div>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <span class="project-num">02</span>
+            <h3 class="project-name" data-scramble>Wanderlust</h3>
+            <p class="project-tagline">Travel Accommodation Listing Platform</p>
+            <p class="project-desc">A full-stack travel listing platform for browsing, creating, and reviewing property listings. Secure authentication with role-based access and cloud-hosted images.</p>
+            <ul class="project-features">
+              <li>Full CRUD for property listings with image uploads via Cloudinary</li>
+              <li>Secure auth with session management using Passport.js</li>
+              <li>Interactive reviews with one-click ratings and comment threads</li>
+              <li>Cloud-hosted images and geospatial data via MongoDB Atlas</li>
+            </ul>
+            <div class="project-tech">
+              <span>Node.js</span><span>Express.js</span><span>MongoDB</span><span>EJS</span><span>Bootstrap</span><span>Passport.js</span><span>Cloudinary</span>
+            </div>
+            <div class="project-links">
+              <a href="https://majorproject-7z8l.onrender.com/listings" class="btn btn-primary btn-sm magnetic" data-magnetic target="_blank" rel="noopener">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                Live
+              </a>
+              <a href="https://github.com/sandeepkumaryadav05" class="btn btn-outline btn-sm magnetic" data-magnetic target="_blank" rel="noopener">
+                <i class="devicon-github-original"></i> GitHub
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-block gsap-reveal-up" data-tilt>
+          <div class="project-visual">
+            <div class="live-preview">
+              <div class="live-preview-header">
+                <div class="mockup-dots"><span></span><span></span><span></span></div>
+                <div class="live-preview-url">dish-genie-seven.vercel.app</div>
+                <a href="https://dish-genie-seven.vercel.app" class="live-preview-external" target="_blank" rel="noopener" aria-label="Open live site">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                </a>
+              </div>
+              <div class="live-preview-frame">
+                <iframe src="https://dish-genie-seven.vercel.app" loading="lazy" title="DishGenie live preview" sandbox="allow-scripts allow-same-origin"></iframe>
+                <div class="live-preview-overlay"></div>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <span class="project-num">03</span>
+            <h3 class="project-name" data-scramble>DishGenie</h3>
+            <p class="project-tagline">Smart Recipe Recommendation &amp; Meal Planner</p>
+            <p class="project-desc">An AI-powered recipe app that suggests dishes based on ingredients, dietary preferences, and cooking time. Includes a full admin panel for content management.</p>
+            <ul class="project-features">
+              <li>AI-driven recipe suggestions based on available ingredients</li>
+              <li>Nutritional info filtering with dietary preference matching</li>
+              <li>Firebase auth with role-based access (admin vs. user)</li>
+              <li>Admin panel for CRUD on recipes and categories</li>
+            </ul>
+            <div class="project-tech">
+              <span>React.js</span><span>Node.js</span><span>Express.js</span><span>MongoDB</span><span>Firebase</span><span>Gemini AI</span><span>REST API</span>
+            </div>
+            <div class="project-links">
+              <a href="https://dish-genie-seven.vercel.app" class="btn btn-primary btn-sm magnetic" data-magnetic target="_blank" rel="noopener">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                Live
+              </a>
+              <a href="https://github.com/sandeepkumaryadav05/Dish_Genie" class="btn btn-outline btn-sm magnetic" data-magnetic target="_blank" rel="noopener">
+                <i class="devicon-github-original"></i> GitHub
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-block reverse gsap-reveal-up" data-tilt>
+          <div class="project-visual">
+            <div class="live-preview">
+              <div class="live-preview-header">
+                <div class="mockup-dots"><span></span><span></span><span></span></div>
+                <div class="live-preview-url">real-time-chat-henna-iota.vercel.app</div>
+                <a href="https://real-time-chat-henna-iota.vercel.app/" class="live-preview-external" target="_blank" rel="noopener noreferrer" aria-label="Open Real-Time Chat live demo">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                </a>
+              </div>
+              <div class="live-preview-frame">
+                <iframe src="https://real-time-chat-henna-iota.vercel.app/" loading="lazy" title="Real-Time Chat live preview" sandbox="allow-scripts allow-same-origin"></iframe>
+                <div class="live-preview-overlay"></div>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <span class="project-num">04</span>
+            <h3 class="project-name" data-scramble>Real-Time Chat</h3>
+            <p class="project-tagline">Real-Time Messaging Platform</p>
+            <p class="project-desc">A full-stack real-time messaging application built with React, Node.js, Express.js, MongoDB, and Socket.io. Enables authenticated users to communicate through live messaging while tracking online and offline user status.</p>
+            <ul class="project-features">
+              <li>Real-time messaging using Socket.io</li>
+              <li>User authentication</li>
+              <li>Live communication between users</li>
+              <li>Online/offline user status</li>
+              <li>Persistent chat data with MongoDB</li>
+            </ul>
+            <div class="project-tech">
+              <span>React.js</span><span>Node.js</span><span>Express.js</span><span>MongoDB</span><span>Socket.io</span>
+            </div>
+            <div class="project-links">
+              <a href="https://real-time-chat-henna-iota.vercel.app/" class="btn btn-primary btn-sm magnetic" data-magnetic target="_blank" rel="noopener noreferrer" aria-label="Open Real-Time Chat live demo">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                Live
+              </a>
+              <a href="https://github.com/sandeepkumaryadav05/Real-time--chat" class="btn btn-outline btn-sm magnetic" data-magnetic target="_blank" rel="noopener noreferrer" aria-label="View Real-Time Chat GitHub repository">
+                <i class="devicon-github-original"></i> GitHub
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-block gsap-reveal-up" data-tilt>
+          <div class="project-visual">
+            <div class="live-preview">
+              <div class="live-preview-header">
+                <div class="mockup-dots"><span></span><span></span><span></span></div>
+                <div class="live-preview-url">calendar-app-seven-beryl.vercel.app</div>
+                <a href="https://calendar-app-seven-beryl.vercel.app" class="live-preview-external" target="_blank" rel="noopener noreferrer" aria-label="Open Interactive Calendar live demo">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                </a>
+              </div>
+              <div class="live-preview-frame">
+                <iframe src="https://calendar-app-seven-beryl.vercel.app" loading="lazy" title="Interactive Calendar live preview" sandbox="allow-scripts allow-same-origin"></iframe>
+                <div class="live-preview-overlay"></div>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <span class="project-num">05</span>
+            <h3 class="project-name" data-scramble>Interactive Calendar</h3>
+            <p class="project-tagline">Smart Calendar with Notes &amp; Holidays</p>
+            <p class="project-desc">A responsive React calendar application with month navigation, date-range selection, monthly notes, seasonal visuals, and Indian holiday information.</p>
+            <ul class="project-features">
+              <li>Navigate between previous and next months</li>
+              <li>Select a start and end date range</li>
+              <li>Save monthly notes automatically using localStorage</li>
+              <li>Seasonal hero image and season label change by month</li>
+              <li>Fetch Indian holidays using the Calendarific API</li>
+              <li>Responsive desktop and mobile layouts</li>
+            </ul>
+            <div class="project-tech">
+              <span>React</span><span>Vite</span><span>date-fns</span><span>Calendarific API</span><span>Vanilla CSS</span><span>localStorage</span>
+            </div>
+            <div class="project-links">
+              <a href="https://calendar-app-seven-beryl.vercel.app" class="btn btn-primary btn-sm magnetic" data-magnetic target="_blank" rel="noopener noreferrer" aria-label="Open Interactive Calendar live demo">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                Live
+              </a>
+              <a href="https://github.com/sandeepkumaryadav05/Calendar-App" class="btn btn-outline btn-sm magnetic" data-magnetic target="_blank" rel="noopener noreferrer" aria-label="View Interactive Calendar GitHub repository">
+                <i class="devicon-github-original"></i> GitHub
+              </a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- Certifications -->
+    <section id="certifications" class="section section-alt">
+      <div class="container">
+        <div class="section-label anim-in">
+          <span class="section-num">05</span>
+          <span class="section-line"></span>
+          <span>CERTIFICATIONS</span>
+        </div>
+        <div class="cert-grid">
+          <div class="cert-card gsap-reveal-up">
+            <div class="cert-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c0 2 2 3 6 3s6-1 6-3v-5"/></svg>
+            </div>
+            <h4>Full Stack Web Development</h4>
+            <p>Apna College</p>
+          </div>
+          <div class="cert-card gsap-reveal-up">
+            <div class="cert-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+            </div>
+            <h4>Internship Completion Certificate</h4>
+            <p>GNCIPL</p>
+          </div>
+          <div class="cert-card gsap-reveal-up">
+            <div class="cert-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+            </div>
+            <h4>GfG 160 — 160 Days Problem Solving</h4>
+            <p>GeeksforGeeks</p>
+          </div>
+          <div class="cert-card gsap-reveal-up">
+            <div class="cert-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
+            </div>
+            <h4>250+ DSA Problems Solved</h4>
+            <p>LeetCode &amp; GeeksforGeeks</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section">
+      <div class="flow-lines contact-flow" aria-hidden="true">
+        <svg viewBox="0 0 1400 800" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+          <path d="M-50,500 C200,485 450,515 700,498 C950,482 1150,508 1450,492" stroke="#00F5C8" stroke-width="0.8" opacity="0.08"/>
+          <path d="M-50,520 C180,508 430,532 680,515 C930,500 1130,525 1450,510" stroke="#00F5C8" stroke-width="0.6" opacity="0.06"/>
+          <path d="M-50,480 C220,470 470,490 720,478 C970,468 1170,485 1450,475" stroke="#00F5C8" stroke-width="0.5" opacity="0.05"/>
+          <path d="M-50,540 C250,534 500,546 750,538 C1000,532 1200,542 1450,536" stroke="#00F5C8" stroke-width="0.5" opacity="0.05"/>
+          <path d="M-50,460 C280,452 530,468 780,458 C1030,450 1230,464 1450,455" stroke="#00F5C8" stroke-width="0.4" opacity="0.04"/>
+          <path d="M-50,560 C260,556 510,564 760,558 C1010,554 1210,561 1450,557" stroke="#00F5C8" stroke-width="0.4" opacity="0.04"/>
+          <path d="M-50,510 C230,505 480,515 730,508 C980,503 1180,512 1450,507" stroke="#00F5C8" stroke-width="0.3" opacity="0.03"/>
+          <path d="M-50,490 C240,486 490,494 740,489 C990,485 1190,492 1450,488" stroke="#00F5C8" stroke-width="0.3" opacity="0.03"/>
+          <path d="M-50,470 C300,464 550,476 800,468 C1050,462 1250,473 1450,466" stroke="#00F5C8" stroke-width="0.4" opacity="0.03"/>
+          <path d="M-50,550 C290,546 540,554 790,548 C1040,544 1240,552 1450,547" stroke="#00F5C8" stroke-width="0.3" opacity="0.02"/>
+          <path d="M-50,530 C270,527 520,533 770,529 C1020,526 1220,531 1450,528" stroke="#00F5C8" stroke-width="0.3" opacity="0.02"/>
+          <path d="M-50,500 C250,496 500,504 750,498 C1000,494 1200,501 1450,497" stroke="#00F5C8" stroke-width="0.3" opacity="0.02"/>
+        </svg>
+      </div>
+      <div class="container">
+        <div class="section-label anim-in">
+          <span class="section-num">06</span>
+          <span class="section-line"></span>
+          <span>CONTACT</span>
+        </div>
+        <div class="contact-grid">
+          <div class="contact-text">
+            <h2 class="contact-headline gsap-reveal" data-scramble>LET'S BUILD<br/>SOMETHING USEFUL<span class="accent">.</span></h2>
+            <p class="contact-desc gsap-reveal">Open to Software Engineering and Full Stack opportunities. My inbox is always open — whether you have a question, a project idea, or just want to connect.</p>
+            <div class="contact-links gsap-reveal">
+              <a href="mailto:sandeepk.ydv03@gmail.com" class="contact-link-item magnetic" data-magnetic>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                <span>sandeepk.ydv03@gmail.com</span>
+              </a>
+              <a href="https://github.com/sandeepkumaryadav05" class="contact-link-item magnetic" data-magnetic target="_blank" rel="noopener">
+                <i class="devicon-github-original"></i>
+                <span>github.com/sandeepkumaryadav05</span>
+              </a>
+              <a href="#" class="contact-link-item magnetic" data-magnetic>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+                <span>LinkedIn</span>
+              </a>
+            </div>
+          </div>
+          <form class="contact-form gsap-reveal" id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="YOUR_KEY_HERE" />
+            <input type="hidden" name="subject" value="New message from Sandeep's Portfolio" />
+            <input type="checkbox" name="botcheck" class="hidden" style="display:none" />
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="John Doe" required />
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="john@example.com" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Your message..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full magnetic" data-magnetic>Send Message</button>
+            <div class="form-status" id="formStatus"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span class="footer-name">Sandeep Kumar Yadav</span>
+      <span class="footer-tech">Built with HTML, CSS &amp; JS</span>
+      <span class="footer-copy">&copy; 2025</span>
+    </div>
+  </footer>
+
+  <button class="back-to-top magnetic" id="backToTop" data-magnetic aria-label="Back to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+
+  <div class="nav-overlay" id="navOverlay"></div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
