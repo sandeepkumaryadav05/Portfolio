@@ -603,7 +603,7 @@
             </div>
           </div>
           <form class="contact-form gsap-reveal" id="contactForm" action="https://api.web3forms.com/submit" method="POST">
-            <input type="hidden" name="access_key" value="YOUR_KEY_HERE" />
+            <input type="hidden" name="access_key" value="fac556d2-f312-4594-b72b-fe04a4633b7c" />
             <input type="hidden" name="subject" value="New message from Sandeep's Portfolio" />
             <input type="checkbox" name="botcheck" class="hidden" style="display:none" />
             <div class="form-row">
@@ -620,6 +620,7 @@
               <label for="message">Message</label>
               <textarea id="message" name="message" rows="5" placeholder="Your message..." required></textarea>
             </div>
+            <div class="h-captcha" data-captcha="true"></div>
             <button type="submit" class="btn btn-primary btn-full magnetic" data-magnetic>Send Message</button>
             <div class="form-status" id="formStatus"></div>
           </form>
@@ -644,6 +645,7 @@
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://web3forms.com/client/script.js" async defer></script>
   <script src="script.js"></script>
 </body>
 </html>

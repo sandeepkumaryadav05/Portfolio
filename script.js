@@ -338,6 +338,14 @@
       var status = formStatus;
       status.textContent = '';
       status.className = 'form-status';
+
+      var hCaptchaResponse = contactForm.querySelector('textarea[name="h-captcha-response"]');
+      if (!hCaptchaResponse || !hCaptchaResponse.value) {
+        status.textContent = 'Please complete the security verification.';
+        status.className = 'form-status error';
+        return;
+      }
+
       var submitBtn = contactForm.querySelector('button[type="submit"]');
       var orig = submitBtn.textContent;
       submitBtn.textContent = 'Sending...';
@@ -353,6 +361,9 @@
             status.textContent = 'Message sent successfully! I\'ll get back to you soon.';
             status.className = 'form-status success';
             contactForm.reset();
+            if (typeof hcaptcha !== 'undefined') {
+              try { hcaptcha.reset(); } catch (err) { /* ignore */ }
+            }
           } else {
             return response.json().then(function (d) { throw new Error(d.message); });
           }

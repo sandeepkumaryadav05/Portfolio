@@ -1257,6 +1257,23 @@ input, textarea { outline: none; }
 .form-status.success { color: var(--accent); }
 .form-status.error { color: #ef4444; }
 
+/* ---- HCAPTCHA ---- */
+.h-captcha {
+  margin-bottom: 20px;
+}
+
+.h-captcha iframe {
+  max-width: 100%;
+  border-radius: var(--radius-sm);
+}
+
+@media (max-width: 768px) {
+  .h-captcha {
+    display: flex;
+    justify-content: center;
+  }
+}
+
 @media (max-width: 768px) {
   .contact-grid { grid-template-columns: 1fr; gap: 48px; }
   .form-row { grid-template-columns: 1fr; }
